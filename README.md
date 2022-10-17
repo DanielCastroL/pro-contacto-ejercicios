@@ -1,6 +1,4 @@
 
-` $ npm install `
-
 # Evaluación Práctica
 <br>
 
@@ -104,6 +102,7 @@
 
   ¿Qué diferencias se observan entre las llamadas el punto 1 y 3?<br>
   En la primera llamada de observó que el tamaño fue de 13.01 KB, mientras que en la última el tamaño fue de 13.09 KB. Significando que obviamente hubo un cambio, el cual fue el POST a la URL con la información adicional que agregamos en body. Dicha información agregada se encontrará en la última lína de código del archivo JSON.
+<br>
 <br>
 
 # Ejercicio 4
