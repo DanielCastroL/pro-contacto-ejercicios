@@ -1,7 +1,7 @@
 
 ` $ npm install `
 
-# Evaluación Práctica 123
+# Evaluación Práctica
 <br>
 
 # Ejercicio 1
