@@ -96,7 +96,7 @@ El content-type es un recurso utilizado en el header, que le indica al cliente q
 
 # Ejercicio 3
 
-1.	![](Colocar imagenes)
+1.	![](https://github.com/DanielCastroL/pro-contacto-ejercicios/blob/main/Screens%20Ejercicios/Ejercicio%203.1.png)
 
 2.	![](Colocar imagenes)
 
