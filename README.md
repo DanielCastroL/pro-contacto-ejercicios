@@ -25,19 +25,19 @@
   Son una serie de parametros o datos que se incluyen en las URL y hacen referencia a una interacción con la base de datos.
 
   ***5.	¿Qué es el responseCode? ¿Qué significado tiene los posibles valores devueltos?***<br>
-  Son diferentes códigos que indican el estado respuesta de una solicitud HTTP. Las respuestas se dividen en cinco categorías.
+  Son diferentes códigos que indican el estado de respuesta de una solicitud HTTP. Las respuestas se dividen en cinco categorías.
   - Informativas (100-199)
-  - Stisfactorias (200-299)
+  - Satisfactorias (200-299)
   - Redirecciones(300-399)
   - Errores de clientes (400-499)
   - Errores de servidores (500-599)
 
   ***6.	¿Cómo se envía la data en un Get y cómo en un POST?***<br>
   Con **GET**, los datos que se envíen al servidor se encontrarán situados en el mismo URL. por lo que podrán ser visualizados.
-  Con **POST**, los datos son introducidos en la solicitud HTTP para el servidor. Por lo queno podrán ser visualizados por el usuario.
+  Con **POST**, los datos son introducidos en la solicitud HTTP para el servidor. Por lo que no podrán ser visualizados por el usuario.
 
   ***7.	¿Qué verbo http utiliza el navegador cuando accedemos a una página?***<br>
-  Se utiliza **GET**, debido a que por protocolo el navegador solo necesita una URL para indicarle al servidor wue contenido traer.
+  Se utiliza **GET**, debido a que por protocolo el navegador solo necesita una URL para indicarle al servidor que contenido traer.
 
   ***8.	Explicar brevemente qué son las estructuras de datos JSON y XML dando ejemplo de estructuras posibles.***<br>
   **JSON** (notación de objetos de JavaScript) es un formato de transmisión de datos basado en texto, que puede estructurar dichos datos como arreglos u objetos.<br>
@@ -81,14 +81,14 @@
   </libreria>
   ```
   ***9.	Explicar brevemente el estándar SOAP***<br>
-  **SOAP** (protocolo simple de acceso a objetos) es un protocolo estándar basado en XML que hace posible la comunicación entre entre aplicaciones con diferentes lenjuages y plataformas. Aunque se lleva generalmente a través de HTTP, el transporte de SOAP es independiente.
+  **SOAP** (protocolo simple de acceso a objetos) es un protocolo estándar basado en XML que hace posible la comunicación entre aplicaciones con diferentes lenjuages y plataformas. Aunque se lleva generalmente a través de HTTP, el transporte de SOAP es independiente.
 
   ***10. Explicar brevemente el estándar REST Full***<br>
   **RESTful** (transferencia de estado representacional) es un tipo de arquitectura de desarrollo web que se apoya en el estándar HTTP y se compone de una lista de reglas en cuanto al diseño de la arquitectura de una API que se deben cumplir.
 
   ***11. ¿Qué son los headers en un request? ¿Para qué se utiliza el key Content-type en un header?***<br>
-  Los headers transmiten información acerca del navegador del cliente, de la página solicitada, del servidor, entre otros datos.<br> 
-  El content-type es un recurso utilizado en el header, que le indica al cliente qué tipo de contenido será enviando por el servidor.
+  - Los headers transmiten información acerca del navegador del cliente, de la página solicitada, del servidor, entre otros datos.<br> 
+  - El content-type es un recurso utilizado en el header, que le indica al cliente qué tipo de contenido será enviando por el servidor.
 <br>
 <br>
 
@@ -101,7 +101,7 @@
   3.	![](https://github.com/DanielCastroL/pro-contacto-ejercicios/blob/main/Screens%20Ejercicios/Ejercicio%203.3.1.png)
 
   ¿Qué diferencias se observan entre las llamadas el punto 1 y 3?<br>
-  En la primera llamada de observó que el tamaño fue de 13.01 KB, mientras que en la última el tamaño fue de 13.09 KB. Significando que obviamente hubo un cambio, el cual fue el POST a la URL con la información adicional que agregamos en body. Dicha información agregada se encontrará en la última lína de código del archivo JSON.
+  En la primera llamada de observó que el tamaño fue de 13.01 KB, mientras que en la última el tamaño fue de 13.09 KB. Significando que obviamente hubo un cambio, el cual fue el POST a la URL con la información adicional que agregamos en body. Dicha información agregada se encontrará en la parte final del código del archivo JSON.
 <br>
 <br>
 
@@ -117,7 +117,7 @@
   Es un cliente potencial que ha mostrado interes en un producto o servicio que su compañía ofrece. Almacena información acerca de sus intereses en su compañia.
 
   ***2.	Account.*** <br>
-  Es una organización, compañía o consumidor del que se desea realizar un seguimiento, como un cliente, socio o competidor. Almacena datos relacionados a su organización y puede contener muchos contacto. Además se relaciona indirectamente con las otras palabras debido a que todo inicia con una cuenta. 
+  Es una organización, compañía o consumidor del que se desea realizar un seguimiento, como un cliente, socio o competidor. Almacena datos relacionados a su organización y puede contener muchos contactos. Además se relaciona indirectamente con las otras palabras debido a que todo inicia con una cuenta. 
 
   ***3.	Contact.*** <br>
   Son las personas asociadas a sus cuentas, aunque también se pueden asociar a Opportunities. Almacenan información sobre las personas con las que hace negocios.
@@ -138,7 +138,7 @@
   Es un modelo específico o tipo de producto específico adquirido o instalado que un cliente posee. 
 
   ***9.	Case.*** <br>
-  Es una pregunta, comentario o problema detallado de un cliente. Empleada para que los agentes del servicio de atención puedan ayudar y brindar un mejor servicio. 
+  Es una pregunta, comentario o problema detallado de un cliente. Empleado para que los agentes del servicio de atención puedan ayudar y brindar un mejor servicio. 
 
   ***10.	Article.*** <br>
   Es un documento que captura información acerca de los productos y servicios de su compañia, de los cuales se quiere la disponibilidad en la base de datos. Almacena datos sobre sus productos o preguntas frecuentes, relacionandoce con Cases o Assets.
@@ -179,7 +179,7 @@
   Define el conjunto de registros y campos disponibles para un informe en función de las relaciones entre un objeto principal y sus objetos relacionados.
 
   ***C.	¿Qué es un Page Layout?*** <br>
-  Es una organización de campos, lenlaces personalizados y listas relacionadas en una página de edición o detalle de registro. Utilizados principalmente para organizar páginas para sus usuarios. 
+  Es una organización de campos, enlaces personalizados y listas relacionadas en una página de edición o detalle de registro. Utilizados principalmente para organizar páginas para sus usuarios. 
 
   ***D.	¿Qué es un Compact Layout?*** <br>
   Es un diseño compacto que muestra los campos clave de un registro en la aplicación móvil Salesforce, Lightning Experience y en las integraciones de Outlook y Gmail.
@@ -228,7 +228,7 @@
   Si, debido a que es simple y de fácil acceso al no necesitar instalar, mantener y actualizar hardwares y softwares.
 
   ***C.	¿Qué significa que una solución sea Cloud?*** <br>
-  Que emplea una tecnología con acceso remoto a softwares, almacenamiento y procesamiento de datos.
+  Que emplea una tecnología con acceso remoto a software, almacenamiento y procesamiento de datos.
 
   ***D.	¿Qué significa que una solución sea On-Premise?*** <br>
   Que se está realizando alguna acción de manera local en una computadora en las instalaciones de su propia empresa.
@@ -270,7 +270,7 @@
 
 # Ejercicio 7
 
-Este ejercicio de realizó en "My Trailhead Playground 1".
+Este ejercicio se realizó en "My Trailhead Playground 1".
 
 ```
 trigger idprocontactoTriggerE7 on Contact (before insert) {
