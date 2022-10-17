@@ -6,7 +6,9 @@
 
 # Ejercicio 1
 
-![](Colocar imagenes)
+
+
+![](https://github.com/DanielCastroL/pro-contacto-ejercicios/blob/main/Screens%20Ejercicios/Ejercicio%201%20IDE%20VSCode.png)
 
 # Ejercicio 2
 
