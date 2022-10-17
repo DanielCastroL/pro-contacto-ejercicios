@@ -148,6 +148,7 @@
   Diagrama UML 
   ![](https://github.com/DanielCastroL/pro-contacto-ejercicios/blob/main/Screens%20Ejercicios/UML%20Diagram.drawio.png)
 <br>
+<br>
 
 # Ejercicio 6
 
