@@ -145,8 +145,8 @@
   Es un documento que captura información acerca de los productos y servicios de su compañia, de los cuales se quiere la disponibilidad en la base de datos. Almacena datos sobre sus productos o preguntas frecuentes, relacionandoce con Cases o Assets.
   <br>
 
-  Diagrama UML ![](https://github.com/DanielCastroL/pro-contacto-ejercicios/blob/main/Screens%20Ejercicios/UML%20Diagram.drawio.png)
-  
+  Diagrama UML 
+  ![](https://github.com/DanielCastroL/pro-contacto-ejercicios/blob/main/Screens%20Ejercicios/UML%20Diagram.drawio.png)
 <br>
 
 # Ejercicio 6
@@ -270,7 +270,47 @@
 
 # Ejercicio 7
 
+Este ejercicio de realizó en "My Trailhead Playground 1".
 
+```
+trigger idprocontactoTriggerE7 on Contact (before insert) {
+
+    public static HttpResponse makeGetCallout() {
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint('https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json');
+        request.setMethod('GET');
+        HttpResponse response = http.send(request);
+        
+        if(response.getStatusCode() == 255) {
+            Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+            List<Object> idprocontacto = (List<Object>) results.get('idprocontacto');
+            System.debug('Received the following idprocontacto:');
+            for(Object Contact: idprocontacto) {
+                System.debug(Contact);
+            }
+        }
+        return response;
+    }
+    public static HttpResponse makePostCallout() {
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint('https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json');
+        request.setMethod('POST');
+        request.setHeader('Content-Type', 'application/json;charset=UTF-8');
+        request.setBody('{"email":"-##"}');
+        HttpResponse response = http.send(request);
+        // Parse the JSON response
+        if(response.getStatusCode() != 255) {
+            System.debug('The status code returned was not expected: ' +
+                response.getStatusCode() + ' ' + response.getStatus());
+        } else {
+            System.debug(response.getBody());
+        }
+        return response;
+    }        
+}
+```
 
 
 
